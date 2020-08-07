@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Sample Application- PersonnelView | Junho&#39;s Git Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="목차  ExtjsCe Quick Start Sapmle Application- 실행화면 Sample Application- HomeView    1. PersonnelView.js의 코드1234567891011121314151617181920212223242526Ext.define(&#39;MyExtGenApp.view.personnel.PersonnelView&#39;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sample Application- PersonnelView">
+<meta property="og:url" content="https://junhojava.github.io/2019/06/16/ninth/index.html">
+<meta property="og:site_name" content="Junho&#39;s Git Page">
+<meta property="og:description" content="목차  ExtjsCe Quick Start Sapmle Application- 실행화면 Sample Application- HomeView    1. PersonnelView.js의 코드1234567891011121314151617181920212223242526Ext.define(&#39;MyExtGenApp.view.personnel.PersonnelView&#39;">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-06-16T08:11:09.000Z">
+<meta property="article:modified_time" content="2020-07-24T09:56:21.315Z">
+<meta property="article:author" content="Junho">
+<meta property="article:tag" content="Extjs, Community Edition, CE, Sample Application, PersonnelView">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Junho&#39;s Git Page" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Junho&#39;s Git Page</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://junhojava.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-ninth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/16/ninth/" class="article-date">
+  <time datetime="2019-06-16T08:11:09.000Z" itemprop="datePublished">2019-06-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Sample Application- PersonnelView
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="목차"><a href="#목차" class="headerlink" title="목차"></a>목차</h2><hr>
+<ol>
+<li><a href="https://junhojava.github.io/2019/05/26/sixth/">ExtjsCe Quick Start</a></li>
+<li><a href="https://junhojava.github.io/2019/06/02/seventh/">Sapmle Application- 실행화면</a></li>
+<li><a href="https://junhojava.github.io/2019/06/09/eighth/">Sample Application- HomeView</a></li>
+</ol>
+<hr>
+<p><br/></p>
+<h3 id="1-PersonnelView-js의-코드"><a href="#1-PersonnelView-js의-코드" class="headerlink" title="1. PersonnelView.js의 코드"></a>1. PersonnelView.js의 코드</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.personnel.PersonnelView'</span>,&#123;</span><br><span class="line">	extend: <span class="string">'Ext.grid.Grid'</span>,</span><br><span class="line">	xtype: <span class="string">'personnelview'</span>,</span><br><span class="line">	cls: <span class="string">'personnelview'</span>,</span><br><span class="line">	requires: [],</span><br><span class="line">	controller: &#123;<span class="built_in">type</span>: <span class="string">'personnelviewcontroller'</span>&#125;,</span><br><span class="line">	viewModel: &#123;<span class="built_in">type</span>: <span class="string">'personnelviewmodel'</span>&#125;,</span><br><span class="line">	store: &#123;<span class="built_in">type</span>: <span class="string">'personnelviewstore'</span>&#125;,</span><br><span class="line">	columns: [</span><br><span class="line">		&#123; </span><br><span class="line">			text: <span class="string">'Name'</span>,</span><br><span class="line">			dataIndex: <span class="string">'name'</span>,</span><br><span class="line">			width: 100,</span><br><span class="line">			cell: &#123;userCls: <span class="string">'bold'</span>&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;text: <span class="string">'Email'</span>,dataIndex: <span class="string">'email'</span>,width: 230&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			text: <span class="string">'Phone'</span>,</span><br><span class="line">			dataIndex: <span class="string">'phone'</span>,</span><br><span class="line">			width: 150 </span><br><span class="line">		&#125;</span><br><span class="line">	],</span><br><span class="line">	listeners: &#123;</span><br><span class="line">		select: <span class="string">'onItemSelected'</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 PersonnelView에 대한 class를 정의한다. config는 다음과 같다.<br>xtype :personnelview’ (homeview라는 컴포넌트를 생성할때 ‘MyExtGenApp.view.personnel.PersonnelView’또는 ‘personnelview’만을 적어서 생성 할 수 있다.)<br>cls: ‘personnelview’ (personnelview라는 이름을 가진 class[html태그의 class 선택자]를 추가한다.)<br>contoller: ‘personnelviewcontroller’ (personnelviewcontroller를 controller로 사용.)<br>viewmodel: ‘personnelviewmodel’ (personnelviewmodel을 viewmodel로 사용한다.)<br>store: {type: ‘personnelviewstore’} (personnelviewstore를 사용함)<br>extend: ‘Ext.grid.Grid’ (Ext.grid.Grid를 상속받는다, Ext.gird.Grid는 DataGrid의 형태를 가지고 있다.)<br>columns: [<br>&nbsp;&nbsp;&nbsp;&nbsp;{ text: ‘Name’,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dataIndex: ‘name’,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 100,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cell: {userCls: ‘bold’}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>]<br>: (데이터 그리드의 컬럼(열)을 생성하는 방법이다.<br> text: ‘Name’의 컬럼명을 가진,<br> dataIndex: ‘name’ personnelviewstore의 name key의 값을 행의 내용에 넣는다.<br> 열의 너비는 width: 100만큼 차지하고,<br> cell: {userCls: ‘bold’} 셀의 특정한 속성을 넣는다.)</p>
+<p>listeners: {<br>&nbsp;&nbsp;&nbsp; select: ‘onItemSelected’<br>}<br>: (데이터 그리드의 행을 선택(select) 할 때 personnelviewcontorller에 정의된 onItemSelected 함수를 실행하는 이벤트 처리에 대하여 정의되어 있다.)</p>
+<h3 id="2-PersonnelViewController-js의-코드"><a href="#2-PersonnelViewController-js의-코드" class="headerlink" title="2. PersonnelViewController.js의 코드"></a>2. PersonnelViewController.js의 코드</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.personnel.PersonnelViewController'</span>, &#123;</span><br><span class="line">	extend: <span class="string">'Ext.app.ViewController'</span>,</span><br><span class="line">	<span class="built_in">alias</span>: <span class="string">'controller.personnelviewcontroller'</span>,</span><br><span class="line"></span><br><span class="line">	onItemSelected: <span class="keyword">function</span> (sender, record) &#123;</span><br><span class="line">		Ext.Msg.confirm(<span class="string">'Confirm'</span>, <span class="string">'Are you sure?'</span>, <span class="string">'onConfirm'</span>, this);</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">	onConfirm: <span class="keyword">function</span> (choice) &#123;</span><br><span class="line">		<span class="keyword">if</span> (choice === <span class="string">'yes'</span>) &#123;</span><br><span class="line">			//</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 PersonnelViewController에 대한 Class를 정의한다. config는 다음과 같다.<br>alias :’controller.personnelviewcontroller’ (컨트롤러 생성할때 {type: ‘homeviewcontroller’}만을 적어서 생성 할 수 있다.)<br>extend: ‘Ext.app.ViewController’ (Ext.app.ViewController를 상속받는다.)</p>
+<p>onItemSelected: function (sender, record) {<br>&nbsp;&nbsp;&nbsp; Ext.Msg.confirm(‘confirm’, ‘Are you sure?’, ‘onConfirm’, ‘this);<br>}: personnelview에 생성된 레코드를 선택했을때 실행되는 함수이다. (sender와 record를 argument로 정의되어 있다.)<br>Ext.Msg.confirm 기능을 실행하여 Are you sure? 라고 물어보는 모달창을 생성하는 함수이다. 모달창에는 YES와 NO를 선택할 수 있는 버튼이 있는데 둘중 하나를 선택하면 onConfirm 함수를 실행하는 이벤트가 정의되어 있다.</p>
+<p>onConfirm: function (choice) {<br>&nbsp;&nbsp;&nbsp; if (choice === ‘yes’) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //<br>&nbsp;&nbsp;&nbsp;}<br>}: onItemSelected에서 생성된 모달창의 버튼을 눌렀을 때 실행되는 함수이다. argument중 choice가 버튼에 대한 값이 들어간다. 함수의 내용에는 yes버튼을 눌렀는지 체크하는 조건문이 있다.</p>
+<h3 id="3-PersonnelViewModel-js의-코드"><a href="#3-PersonnelViewModel-js의-코드" class="headerlink" title="3. PersonnelViewModel.js의 코드"></a>3. PersonnelViewModel.js의 코드</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.personnel.PersonnelViewModel'</span>, &#123;</span><br><span class="line">	extend: <span class="string">'Ext.app.ViewModel'</span>,</span><br><span class="line">	<span class="built_in">alias</span>: <span class="string">'viewmodel.personnelviewmodel'</span>,</span><br><span class="line">	data: &#123;</span><br><span class="line">		name: <span class="string">'MyExtGenApp'</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 PersonnelViewModel에 대한 Class를 정의한다. config는 다음과 같다.<br>alias :’controller.personnelviewmodel’ (뷰 모델 생성할때 {type: ‘personnelviewmodel’}만을 적어서 생성 할 수 있다.)<br>extend: ‘Ext.app.ViewModel’ (viewmodel class 를 상속받는다.)</p>
+<h3 id="4-PersonnelStore-js의-코드"><a href="#4-PersonnelStore-js의-코드" class="headerlink" title="4. PersonnelStore.js의 코드"></a>4. PersonnelStore.js의 코드</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.personnel.PersonnelViewStore'</span>, &#123;</span><br><span class="line">	extend: <span class="string">'Ext.data.Store'</span>,</span><br><span class="line">	<span class="built_in">alias</span>: <span class="string">'store.personnelviewstore'</span>,</span><br><span class="line">	fields: [</span><br><span class="line">		<span class="string">'name'</span>, <span class="string">'email'</span>, <span class="string">'phone'</span></span><br><span class="line">	],</span><br><span class="line">	data: &#123; items: [</span><br><span class="line">		&#123; name: <span class="string">'Jean Luc'</span>,   email: <span class="string">"jeanluc.picard@enterprise.com"</span>, phone: <span class="string">"555-111-1111"</span> &#125;,</span><br><span class="line">		&#123; name: <span class="string">'ModernWorf'</span>, email: <span class="string">"worf.moghsson@enterprise.com"</span>,  phone: <span class="string">"555-222-2222"</span> &#125;,</span><br><span class="line">		&#123; name: <span class="string">'Deanna'</span>,     email: <span class="string">"deanna.troi@enterprise.com"</span>,    phone: <span class="string">"555-333-3333"</span> &#125;,</span><br><span class="line">		&#123; name: <span class="string">'Data'</span>,       email: <span class="string">"mr.data@enterprise.com"</span>,        phone: <span class="string">"555-444-4444"</span> &#125;</span><br><span class="line">	]&#125;,</span><br><span class="line">	proxy: &#123;</span><br><span class="line">		<span class="built_in">type</span>: <span class="string">'memory'</span>,</span><br><span class="line">		reader: &#123;</span><br><span class="line">			<span class="built_in">type</span>: <span class="string">'json'</span>,</span><br><span class="line">			rootProperty: <span class="string">'items'</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 PersonnelViewStore에 대한 Class를 정의한다. config는 다음과 같다.<br>alias :’store.personnelviewstore’ (persoennlview의 store를 생성할때 {type: ‘personnelviewstore’}만을 적어서 생성 할 수 있다.)<br>extend: ‘Ext.data.Store’ (Store class 를 상속받는다.)<br>field: [<br>&nbsp;&nbsp;&nbsp; ‘name’, ‘email’, ‘phone’<br>]: (해당 스토어의 field가 정의되어 있다. 이 코드에서는 총 3가지 필드가 정의되어 있다.)<br>data: {<br>&nbsp;&nbsp;&nbsp; items: [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { name: ‘Jean Luc’,   email: “<a href="mailto:jeanluc.picard@enterprise.com">jeanluc.picard@enterprise.com</a>“, phone: “555-111-1111” },<br>&nbsp;&nbsp;&nbsp; ]<br>}: (스토어 내 레코드 정보가 정의도어 있다. Array형태로 여러 줄 만들 수 있다.)<br>proxy: {<br>&nbsp;&nbsp;&nbsp; type: ‘memory’,<br>&nbsp;&nbsp;&nbsp; reader: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type: ‘json’,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rootProperty: ‘items’<br>&nbsp;&nbsp;&nbsp; }<br>}: (메모리 내 프록시를 사용한다. 페이지를 새로고침 할 때마다 내용은 손실된다. jsonReader로 MemoryProxy를 사용하여 items의 내용을 읽어온다.)</p>
+<p>PersonelView.scss 파일은 열어보았지만 코드가 없어서 생략한다.<br>다음 포스트는 mainview에 대하여 다뤄야겠다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/06/16/ninth/" data-id="ckdk30y8m0005prpv0jq1btbw" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/06/16/ninth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Extjs-Community-Edition-CE-Sample-Application-PersonnelView/" rel="tag">Extjs, Community Edition, CE, Sample Application, PersonnelView</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/07/24/post_20200807/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          post_20200807
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/06/09/eighth/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Sample Application- HomeView</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-CE-Getting-Start/" rel="tag">Extjs, Community Edition, CE, Getting Start</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-CE-Sample-Application-PersonnelView/" rel="tag">Extjs, Community Edition, CE, Sample Application, PersonnelView</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-Sample-Application/" rel="tag">Extjs, Community Edition, Sample Application</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Extjs-Community-Edition-CE-Getting-Start/" style="font-size: 10px;">Extjs, Community Edition, CE, Getting Start</a> <a href="/tags/Extjs-Community-Edition-CE-Sample-Application-PersonnelView/" style="font-size: 10px;">Extjs, Community Edition, CE, Sample Application, PersonnelView</a> <a href="/tags/Extjs-Community-Edition-Sample-Application/" style="font-size: 10px;">Extjs, Community Edition, Sample Application</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/24/post_20200807/">post_20200807</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/16/ninth/">Sample Application- PersonnelView</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/09/eighth/">Sample Application- HomeView</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/02/seventh/">Sample Application- 실행화면</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/26/sixth/">Extjs-CE Quick Start</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Junho<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'https-junhojava-github-io';
+  
+  var disqus_url = 'https://junhojava.github.io/2019/06/16/ninth/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Extjs-CE Quick Start | Junho&#39;s Git Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Sencha에서 무료로 사용할 수 있는 CE를 내놓았다. Extjs를 아직 구입하지 않은 사용자에게 좋은 시작이 될 수 있다 느껴졌다.Extjs- CE를 사용하기 위해서는 약간의 요구사항을 만족하는데 그것을 나열해 보겠다.  Node 10+ NPM 6+ JAVA 8 &amp;&amp; 11  이 요구사항이 만족되면 https:&#x2F;&#x2F;www.sencha.com&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Extjs-CE Quick Start">
+<meta property="og:url" content="https://junhojava.github.io/2019/05/26/sixth/index.html">
+<meta property="og:site_name" content="Junho&#39;s Git Page">
+<meta property="og:description" content="Sencha에서 무료로 사용할 수 있는 CE를 내놓았다. Extjs를 아직 구입하지 않은 사용자에게 좋은 시작이 될 수 있다 느껴졌다.Extjs- CE를 사용하기 위해서는 약간의 요구사항을 만족하는데 그것을 나열해 보겠다.  Node 10+ NPM 6+ JAVA 8 &amp;&amp; 11  이 요구사항이 만족되면 https:&#x2F;&#x2F;www.sencha.com&#x2F;">
+<meta property="og:locale">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49608580/58382969-fe3e4480-800b-11e9-89c3-a8c36bc5caf7.png">
+<meta property="article:published_time" content="2019-05-26T13:04:34.000Z">
+<meta property="article:modified_time" content="2020-07-24T09:56:21.316Z">
+<meta property="article:author" content="Junho">
+<meta property="article:tag" content="Extjs, Community Edition, CE, Getting Start">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/49608580/58382969-fe3e4480-800b-11e9-89c3-a8c36bc5caf7.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Junho&#39;s Git Page" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Junho&#39;s Git Page</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://junhojava.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-sixth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/26/sixth/" class="article-date">
+  <time datetime="2019-05-26T13:04:34.000Z" itemprop="datePublished">2019-05-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Extjs-CE Quick Start
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Sencha에서 무료로 사용할 수 있는 CE를 내놓았다. Extjs를 아직 구입하지 않은 사용자에게 좋은 시작이 될 수 있다 느껴졌다.<br>Extjs- CE를 사용하기 위해서는 약간의 요구사항을 만족하는데 그것을 나열해 보겠다.</p>
+<ol>
+<li>Node 10+</li>
+<li>NPM 6+</li>
+<li>JAVA 8 &amp;&amp; 11</li>
+</ol>
+<p>이 요구사항이 만족되면 <a href="https://www.sencha.com/products/extjs/communityedition/" target="_blank" rel="noopener">https://www.sencha.com/products/extjs/communityedition/</a> 페이지로 이동하여 자신의 정보를 입력한다.<br>해당 페이지에 입력한 이메일 주소로 sencha측의 메일이 발송되는데, 이 중 username과 password는 잘 기억해 둔다.</p>
+<p>이제 application project를 만들기 위한 약간의 명령어를 입력한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm login --registry=https://sencha.myget.org/F/community/npm/ --scope=@sencha</span><br></pre></td></tr></table></figure>
+<p>이 명령어를 입력하고 난 후 메일에 포함되어 있던 username과 password를 입력한다. 예를 들면</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">username: asdf..gmail.com</span><br><span class="line">password: A1S2D6F6</span><br><span class="line">e-mail: asdf@gamil.com</span><br></pre></td></tr></table></figure>
+<p>과 같이 입력을 마치고 난 후 Extjs 의 cli를 설치한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @sencha/ext-gen</span><br></pre></td></tr></table></figure>
+<p>Application Project 생성 Quick Start (my-app라는 이름으로 생성된다.)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ext-gen app -a</span><br></pre></td></tr></table></figure>
+<p>Application을 실행시키기 위해서 다음 명령어를 실행한다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> my-app</span><br><span class="line">npm start</span><br><span class="line">또는</span><br><span class="line">npm run desktop</span><br></pre></td></tr></table></figure></p>
+<p>해당 명령어를 입력하면 development build 가 되고 application이 web browser안에서 실행된다.</p>
+<p><img src="https://user-images.githubusercontent.com/49608580/58382969-fe3e4480-800b-11e9-89c3-a8c36bc5caf7.png" alt="Application"></p>
+<p>다음 포스트는 생성된 application을 탐구해 봐야겠다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/05/26/sixth/" data-id="ckdk30y8w000bprpv34xogzmr" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/05/26/sixth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Extjs-Community-Edition-CE-Getting-Start/" rel="tag">Extjs, Community Edition, CE, Getting Start</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/06/02/seventh/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Sample Application- 실행화면
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/12/fifth/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Extjs- [require]</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-CE-Getting-Start/" rel="tag">Extjs, Community Edition, CE, Getting Start</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-CE-Sample-Application-PersonnelView/" rel="tag">Extjs, Community Edition, CE, Sample Application, PersonnelView</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-Sample-Application/" rel="tag">Extjs, Community Edition, Sample Application</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Extjs-Community-Edition-CE-Getting-Start/" style="font-size: 10px;">Extjs, Community Edition, CE, Getting Start</a> <a href="/tags/Extjs-Community-Edition-CE-Sample-Application-PersonnelView/" style="font-size: 10px;">Extjs, Community Edition, CE, Sample Application, PersonnelView</a> <a href="/tags/Extjs-Community-Edition-Sample-Application/" style="font-size: 10px;">Extjs, Community Edition, Sample Application</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/24/post_20200807/">post_20200807</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/16/ninth/">Sample Application- PersonnelView</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/09/eighth/">Sample Application- HomeView</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/02/seventh/">Sample Application- 실행화면</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/26/sixth/">Extjs-CE Quick Start</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Junho<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'https-junhojava-github-io';
+  
+  var disqus_url = 'https://junhojava.github.io/2019/05/26/sixth/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

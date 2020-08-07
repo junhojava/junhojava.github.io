@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Junho&#39;s Git Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Junho&#39;s Git Page">
+<meta property="og:url" content="https://junhojava.github.io/index.html">
+<meta property="og:site_name" content="Junho&#39;s Git Page">
+<meta property="og:locale">
+<meta property="article:author" content="Junho">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Junho&#39;s Git Page" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Junho&#39;s Git Page</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://junhojava.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-post_20200807" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/24/post_20200807/" class="article-date">
+  <time datetime="2020-07-24T10:22:07.017Z" itemprop="datePublished">2020-07-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/24/post_20200807/">post_20200807</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="TDD-책을-읽고-난-뒤-난-이것을-어떻게-실천할지-모르겠다"><a href="#TDD-책을-읽고-난-뒤-난-이것을-어떻게-실천할지-모르겠다" class="headerlink" title="TDD 책을 읽고 난 뒤, 난 이것을 어떻게 실천할지 모르겠다."></a>TDD 책을 읽고 난 뒤, 난 이것을 어떻게 실천할지 모르겠다.</h2><p>난 2년 반동안 소프트웨어 개발이라는 일을 하면서 큰 몇가지의 문제가 겪고있었다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>존재하지 않는 문서</td>
+</tr>
+<tr>
+<td>잦은 요구사항 변경</td>
+</tr>
+<tr>
+<td><b style="color: coral;"><code>신규 기능 구현과 같이 진행되는 유지보수</code></b></td>
+</tr>
+<tr>
+<td><b style="color: coral;"><code>누군사 코드에 손을 대면 작동이 안되는 기존의 기능</code></b></td>
+</tr>
+</tbody>
+</table>
+<p><b style="color: coral;"><code>신규 기능 구현과 같이 진행되는 유지보수</code></b>과 <b style="color: coral;"><code>누군사 코드에 손을 대면 작동이 안되는 기존의 기능</code></b>이 두가지를 해결하고 싶었다. 그래서 TDD(Test-Driven Development:By Example, 켄트 백 지음)책을 읽었다.</p>
+<p>처음 읽을 때에는 저자가 말하고자 하는 바를 이해하려했다.<br>읽기만 하고 끝나니 기억에 남는 것이 별로 없었다. 빨간막대 패턴? 초록막대 패턴? 이 두 가지만 남았다.<br>두번째는 예제를 읽고 타이핑을 했다. 코드나 리비전에 했던것이 남아있으니, 그리고 손에 뭔가 남는 느낌이 들었다.</p>
+<p>두 번을 읽고 나서 이제 내가 만들고 싶은 기능에 TDD를 적용하고 싶었다.<br>너무 답답했다. 어디까지나 예제를 보고 타이핑하는 것은 타이핑에서 끝나는 것인가 보다.<br>내 생각이 테스트 주도적으로 개발을 하도록 바뀐 것은 아니었다.</p>
+<p>이 책은 좋은 책이 맞고, 언젠가 내가 테스트 주도적으로 개발을 할 수 있는 날을 상상하면 기분이 좋다.<br>현재는 막힐 때마다 참고서의 풀이를 읽고 문제를 해결하듯이, 내가 하고 싶은것을 잘 안풀릴 때마다 이 책을 읽고 행동으로 취해봐야겠다. </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2020/07/24/post_20200807/" data-id="ckdk30y8p0007prpv93us9rh7" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2020/07/24/post_20200807/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-ninth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/16/ninth/" class="article-date">
+  <time datetime="2019-06-16T08:11:09.000Z" itemprop="datePublished">2019-06-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/16/ninth/">Sample Application- PersonnelView</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="목차"><a href="#목차" class="headerlink" title="목차"></a>목차</h2><hr>
+<ol>
+<li><a href="https://junhojava.github.io/2019/05/26/sixth/">ExtjsCe Quick Start</a></li>
+<li><a href="https://junhojava.github.io/2019/06/02/seventh/">Sapmle Application- 실행화면</a></li>
+<li><a href="https://junhojava.github.io/2019/06/09/eighth/">Sample Application- HomeView</a></li>
+</ol>
+<hr>
+<p><br/></p>
+<h3 id="1-PersonnelView-js의-코드"><a href="#1-PersonnelView-js의-코드" class="headerlink" title="1. PersonnelView.js의 코드"></a>1. PersonnelView.js의 코드</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.personnel.PersonnelView'</span>,&#123;</span><br><span class="line">	extend: <span class="string">'Ext.grid.Grid'</span>,</span><br><span class="line">	xtype: <span class="string">'personnelview'</span>,</span><br><span class="line">	cls: <span class="string">'personnelview'</span>,</span><br><span class="line">	requires: [],</span><br><span class="line">	controller: &#123;<span class="built_in">type</span>: <span class="string">'personnelviewcontroller'</span>&#125;,</span><br><span class="line">	viewModel: &#123;<span class="built_in">type</span>: <span class="string">'personnelviewmodel'</span>&#125;,</span><br><span class="line">	store: &#123;<span class="built_in">type</span>: <span class="string">'personnelviewstore'</span>&#125;,</span><br><span class="line">	columns: [</span><br><span class="line">		&#123; </span><br><span class="line">			text: <span class="string">'Name'</span>,</span><br><span class="line">			dataIndex: <span class="string">'name'</span>,</span><br><span class="line">			width: 100,</span><br><span class="line">			cell: &#123;userCls: <span class="string">'bold'</span>&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		&#123;text: <span class="string">'Email'</span>,dataIndex: <span class="string">'email'</span>,width: 230&#125;,</span><br><span class="line">		&#123;</span><br><span class="line">			text: <span class="string">'Phone'</span>,</span><br><span class="line">			dataIndex: <span class="string">'phone'</span>,</span><br><span class="line">			width: 150 </span><br><span class="line">		&#125;</span><br><span class="line">	],</span><br><span class="line">	listeners: &#123;</span><br><span class="line">		select: <span class="string">'onItemSelected'</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 PersonnelView에 대한 class를 정의한다. config는 다음과 같다.<br>xtype :personnelview’ (homeview라는 컴포넌트를 생성할때 ‘MyExtGenApp.view.personnel.PersonnelView’또는 ‘personnelview’만을 적어서 생성 할 수 있다.)<br>cls: ‘personnelview’ (personnelview라는 이름을 가진 class[html태그의 class 선택자]를 추가한다.)<br>contoller: ‘personnelviewcontroller’ (personnelviewcontroller를 controller로 사용.)<br>viewmodel: ‘personnelviewmodel’ (personnelviewmodel을 viewmodel로 사용한다.)<br>store: {type: ‘personnelviewstore’} (personnelviewstore를 사용함)<br>extend: ‘Ext.grid.Grid’ (Ext.grid.Grid를 상속받는다, Ext.gird.Grid는 DataGrid의 형태를 가지고 있다.)<br>columns: [<br>&nbsp;&nbsp;&nbsp;&nbsp;{ text: ‘Name’,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dataIndex: ‘name’,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 100,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cell: {userCls: ‘bold’}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>]<br>: (데이터 그리드의 컬럼(열)을 생성하는 방법이다.<br> text: ‘Name’의 컬럼명을 가진,<br> dataIndex: ‘name’ personnelviewstore의 name key의 값을 행의 내용에 넣는다.<br> 열의 너비는 width: 100만큼 차지하고,<br> cell: {userCls: ‘bold’} 셀의 특정한 속성을 넣는다.)</p>
+<p>listeners: {<br>&nbsp;&nbsp;&nbsp; select: ‘onItemSelected’<br>}<br>: (데이터 그리드의 행을 선택(select) 할 때 personnelviewcontorller에 정의된 onItemSelected 함수를 실행하는 이벤트 처리에 대하여 정의되어 있다.)</p>
+<h3 id="2-PersonnelViewController-js의-코드"><a href="#2-PersonnelViewController-js의-코드" class="headerlink" title="2. PersonnelViewController.js의 코드"></a>2. PersonnelViewController.js의 코드</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.personnel.PersonnelViewController'</span>, &#123;</span><br><span class="line">	extend: <span class="string">'Ext.app.ViewController'</span>,</span><br><span class="line">	<span class="built_in">alias</span>: <span class="string">'controller.personnelviewcontroller'</span>,</span><br><span class="line"></span><br><span class="line">	onItemSelected: <span class="keyword">function</span> (sender, record) &#123;</span><br><span class="line">		Ext.Msg.confirm(<span class="string">'Confirm'</span>, <span class="string">'Are you sure?'</span>, <span class="string">'onConfirm'</span>, this);</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">	onConfirm: <span class="keyword">function</span> (choice) &#123;</span><br><span class="line">		<span class="keyword">if</span> (choice === <span class="string">'yes'</span>) &#123;</span><br><span class="line">			//</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 PersonnelViewController에 대한 Class를 정의한다. config는 다음과 같다.<br>alias :’controller.personnelviewcontroller’ (컨트롤러 생성할때 {type: ‘homeviewcontroller’}만을 적어서 생성 할 수 있다.)<br>extend: ‘Ext.app.ViewController’ (Ext.app.ViewController를 상속받는다.)</p>
+<p>onItemSelected: function (sender, record) {<br>&nbsp;&nbsp;&nbsp; Ext.Msg.confirm(‘confirm’, ‘Are you sure?’, ‘onConfirm’, ‘this);<br>}: personnelview에 생성된 레코드를 선택했을때 실행되는 함수이다. (sender와 record를 argument로 정의되어 있다.)<br>Ext.Msg.confirm 기능을 실행하여 Are you sure? 라고 물어보는 모달창을 생성하는 함수이다. 모달창에는 YES와 NO를 선택할 수 있는 버튼이 있는데 둘중 하나를 선택하면 onConfirm 함수를 실행하는 이벤트가 정의되어 있다.</p>
+<p>onConfirm: function (choice) {<br>&nbsp;&nbsp;&nbsp; if (choice === ‘yes’) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //<br>&nbsp;&nbsp;&nbsp;}<br>}: onItemSelected에서 생성된 모달창의 버튼을 눌렀을 때 실행되는 함수이다. argument중 choice가 버튼에 대한 값이 들어간다. 함수의 내용에는 yes버튼을 눌렀는지 체크하는 조건문이 있다.</p>
+<h3 id="3-PersonnelViewModel-js의-코드"><a href="#3-PersonnelViewModel-js의-코드" class="headerlink" title="3. PersonnelViewModel.js의 코드"></a>3. PersonnelViewModel.js의 코드</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.personnel.PersonnelViewModel'</span>, &#123;</span><br><span class="line">	extend: <span class="string">'Ext.app.ViewModel'</span>,</span><br><span class="line">	<span class="built_in">alias</span>: <span class="string">'viewmodel.personnelviewmodel'</span>,</span><br><span class="line">	data: &#123;</span><br><span class="line">		name: <span class="string">'MyExtGenApp'</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 PersonnelViewModel에 대한 Class를 정의한다. config는 다음과 같다.<br>alias :’controller.personnelviewmodel’ (뷰 모델 생성할때 {type: ‘personnelviewmodel’}만을 적어서 생성 할 수 있다.)<br>extend: ‘Ext.app.ViewModel’ (viewmodel class 를 상속받는다.)</p>
+<h3 id="4-PersonnelStore-js의-코드"><a href="#4-PersonnelStore-js의-코드" class="headerlink" title="4. PersonnelStore.js의 코드"></a>4. PersonnelStore.js의 코드</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.personnel.PersonnelViewStore'</span>, &#123;</span><br><span class="line">	extend: <span class="string">'Ext.data.Store'</span>,</span><br><span class="line">	<span class="built_in">alias</span>: <span class="string">'store.personnelviewstore'</span>,</span><br><span class="line">	fields: [</span><br><span class="line">		<span class="string">'name'</span>, <span class="string">'email'</span>, <span class="string">'phone'</span></span><br><span class="line">	],</span><br><span class="line">	data: &#123; items: [</span><br><span class="line">		&#123; name: <span class="string">'Jean Luc'</span>,   email: <span class="string">"jeanluc.picard@enterprise.com"</span>, phone: <span class="string">"555-111-1111"</span> &#125;,</span><br><span class="line">		&#123; name: <span class="string">'ModernWorf'</span>, email: <span class="string">"worf.moghsson@enterprise.com"</span>,  phone: <span class="string">"555-222-2222"</span> &#125;,</span><br><span class="line">		&#123; name: <span class="string">'Deanna'</span>,     email: <span class="string">"deanna.troi@enterprise.com"</span>,    phone: <span class="string">"555-333-3333"</span> &#125;,</span><br><span class="line">		&#123; name: <span class="string">'Data'</span>,       email: <span class="string">"mr.data@enterprise.com"</span>,        phone: <span class="string">"555-444-4444"</span> &#125;</span><br><span class="line">	]&#125;,</span><br><span class="line">	proxy: &#123;</span><br><span class="line">		<span class="built_in">type</span>: <span class="string">'memory'</span>,</span><br><span class="line">		reader: &#123;</span><br><span class="line">			<span class="built_in">type</span>: <span class="string">'json'</span>,</span><br><span class="line">			rootProperty: <span class="string">'items'</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 PersonnelViewStore에 대한 Class를 정의한다. config는 다음과 같다.<br>alias :’store.personnelviewstore’ (persoennlview의 store를 생성할때 {type: ‘personnelviewstore’}만을 적어서 생성 할 수 있다.)<br>extend: ‘Ext.data.Store’ (Store class 를 상속받는다.)<br>field: [<br>&nbsp;&nbsp;&nbsp; ‘name’, ‘email’, ‘phone’<br>]: (해당 스토어의 field가 정의되어 있다. 이 코드에서는 총 3가지 필드가 정의되어 있다.)<br>data: {<br>&nbsp;&nbsp;&nbsp; items: [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { name: ‘Jean Luc’,   email: “<a href="mailto:jeanluc.picard@enterprise.com">jeanluc.picard@enterprise.com</a>“, phone: “555-111-1111” },<br>&nbsp;&nbsp;&nbsp; ]<br>}: (스토어 내 레코드 정보가 정의도어 있다. Array형태로 여러 줄 만들 수 있다.)<br>proxy: {<br>&nbsp;&nbsp;&nbsp; type: ‘memory’,<br>&nbsp;&nbsp;&nbsp; reader: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type: ‘json’,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rootProperty: ‘items’<br>&nbsp;&nbsp;&nbsp; }<br>}: (메모리 내 프록시를 사용한다. 페이지를 새로고침 할 때마다 내용은 손실된다. jsonReader로 MemoryProxy를 사용하여 items의 내용을 읽어온다.)</p>
+<p>PersonelView.scss 파일은 열어보았지만 코드가 없어서 생략한다.<br>다음 포스트는 mainview에 대하여 다뤄야겠다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/06/16/ninth/" data-id="ckdk30y8m0005prpv0jq1btbw" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/06/16/ninth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Extjs-Community-Edition-CE-Sample-Application-PersonnelView/" rel="tag">Extjs, Community Edition, CE, Sample Application, PersonnelView</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-eighth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/09/eighth/" class="article-date">
+  <time datetime="2019-06-09T04:43:32.000Z" itemprop="datePublished">2019-06-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/09/eighth/">Sample Application- HomeView</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="샘플-프로젝트의-폴더는-밑의-사진처럼-구성되어-있다-View-folder의-하위에-home-main-personnel이-존재하며"><a href="#샘플-프로젝트의-폴더는-밑의-사진처럼-구성되어-있다-View-folder의-하위에-home-main-personnel이-존재하며" class="headerlink" title="샘플 프로젝트의 폴더는 밑의 사진처럼 구성되어 있다. View folder의 하위에 home, main, personnel이 존재하며"></a>샘플 프로젝트의 폴더는 밑의 사진처럼 구성되어 있다. View folder의 하위에 home, main, personnel이 존재하며</h4><h4 id="home-personnel-폴더의-하위에-화면을-구성하는데-필요한-폴더-혹은-파일이-위치해있다"><a href="#home-personnel-폴더의-하위에-화면을-구성하는데-필요한-폴더-혹은-파일이-위치해있다" class="headerlink" title="home~ personnel 폴더의 하위에 화면을 구성하는데 필요한 폴더 혹은 파일이 위치해있다."></a>home~ personnel 폴더의 하위에 화면을 구성하는데 필요한 폴더 혹은 파일이 위치해있다.</h4><p><img src="https://user-images.githubusercontent.com/49608580/59155099-6127e500-8abc-11e9-8461-3a4f3b4d993b.png" alt="폴더구조"></p>
+<p>home과 personnel 폴더는 각 homeview와 personnelview를 구성하는 파일을 구성하는 폴더이며,<br>main폴더는 Sample Application을 구성하는 구조를 정의해놓은 파일 및 폴더의 집합이다.</p>
+<p>home 폴더를 살펴보자. 화면의 모습을 보여줄 HomeView.js 파일과 기능 등을 담당할 HomeViewController.js 그리고 HomeView에 대한 Meodel인<br>HomeViewMode가 있다. HomeView의 스타일을 꾸미고 싶은 경우 HomeView.scss에 코드를 작성하면 된다.</p>
+<h2 id="1-HomeView-js의-코드"><a href="#1-HomeView-js의-코드" class="headerlink" title="1. HomeView.js의 코드"></a>1. HomeView.js의 코드</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.home.HomeView'</span>,&#123;</span><br><span class="line">	xtype: <span class="string">'homeview'</span>,</span><br><span class="line">	cls: <span class="string">'homeview'</span>,</span><br><span class="line">	controller: &#123;<span class="built_in">type</span>: <span class="string">'homeviewcontroller'</span>&#125;,</span><br><span class="line">	viewModel: &#123;<span class="built_in">type</span>: <span class="string">'homeviewmodel'</span>&#125;,</span><br><span class="line">	requires: [],</span><br><span class="line">	extend: <span class="string">'Ext.Container'</span>,</span><br><span class="line">    scrollable: <span class="literal">true</span>,</span><br><span class="line">    html: `&lt;div style=<span class="string">"user-select: text !important;"</span>&gt;Welcome to the Ext JS 6.7 Modern Desktop Template Application!</span><br><span class="line">&lt;br&gt;&lt;br&gt;</span><br><span class="line">This template has the standard architecture <span class="keyword">for</span> a desktop application</span><br><span class="line">&lt;br&gt;</span><br><span class="line">- header and footer with custom buttons and text</span><br><span class="line">&lt;br&gt;</span><br><span class="line">- left-side collapsable menu with custom area on top of menu</span><br><span class="line">&lt;br&gt;</span><br><span class="line">- right-side (optional) detail view</span><br><span class="line">&lt;br&gt;</span><br><span class="line">- Single Page Application (spa) routing (note <span class="comment"># in URL)</span></span><br><span class="line">&lt;br&gt;</span><br><span class="line">- Each View (menu) isolated into its own folder (under the <span class="string">'view'</span> folder)</span><br><span class="line">&lt;br&gt;</span><br><span class="line">- These files: View, View scss file, ViewController, ViewModel (called a ViewPackage)</span><br><span class="line">&lt;br&gt;&lt;br&gt;</span><br><span class="line">Notice that the menu allows you to select from several views, </span><br><span class="line">&lt;br&gt;</span><br><span class="line">- Home (the view you are currently on)</span><br><span class="line">&lt;br&gt;</span><br><span class="line">- Personnel</span><br><span class="line">&lt;br&gt;&lt;br&gt;</span><br><span class="line">select the personnel menu item to see an example of a page with an Ext JS grid</span><br><span class="line">&lt;br&gt;&lt;br&gt;</span><br><span class="line">To build a new ViewPackage, <span class="built_in">type</span> the following <span class="keyword">in</span> a <span class="built_in">command</span> window:</span><br><span class="line">&lt;br&gt;</span><br><span class="line">- &lt;span style=<span class="string">"color:red;"</span>&gt;ext-gen viewpackage employee&lt;/span&gt; (shortcut: &lt;span style=<span class="string">"color:red;"</span>&gt;ext vp employee&lt;/span&gt;)</span><br><span class="line">&lt;br&gt;&lt;br&gt;</span><br><span class="line">Simple Theming:</span><br><span class="line">&lt;br&gt;&lt;br&gt;</span><br><span class="line">- go to <span class="string">'app/desktop/sass/var.scss'</span>, uncomment one of the <span class="variable">$base</span>-color variables</span><br><span class="line">&lt;br&gt;</span><br><span class="line">- more adventurous? go to &lt;span style=<span class="string">"color:red;"</span>&gt;<span class="string">'app/shared/sass/var.scss'</span>&lt;/span&gt; and uncomment all the lines</span><br><span class="line">&lt;/div&gt;`</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 HomeView에 대한 Class를 정의한다. config는 다음과 같다.<br>xtype :’homeview’ (homeview라는 컴포넌트를 생성할때 ‘MyExtGenApp.view.home.HomeView’또는 ‘homeview’만을 적어서 생성 할 수 있다.)<br>cls: ‘homeview’ (homeview라는 이름을 가진 class[html태그의 class 선택자]를 추가한다.)<br>contoller: ‘homeviewcontroller’ (homeviewcontroller를 controller로 사용.)<br>viewmodel: ‘homeviewmodel’ (homeviewmodel을 viewmodel로 사용한다.)<br>extend: ‘Ext.Container’ (Ext.Continer를 상속받는다.)<br>scrollable: true (해당 컴포넌트는 스크롤이 가능하다.)<br>html: ‘&lt;div style=”user-select:…’ (는 해당 컴포넌트의 html 태그)</p>
+<h2 id="2-HomeViewController-js의-코드"><a href="#2-HomeViewController-js의-코드" class="headerlink" title="2. HomeViewController.js의 코드"></a>2. HomeViewController.js의 코드</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(<span class="string">'MyExtGenApp.view.home.HomeViewController'</span>, &#123;</span><br><span class="line">	extend: <span class="string">'Ext.app.ViewController'</span>,</span><br><span class="line">	<span class="built_in">alias</span>: <span class="string">'controller.homeviewcontroller'</span>,</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 HomeViewController에 대한 Class를 정의한다. config는 다음과 같다.<br>alias :’controller.homeviewcontroller’ (컨트롤러 생성할때 {type: ‘homeviewcontroller’}만을 적어서 생성 할 수 있다, xtype과 alias에 대한 부분은 좀 더 조사하여 나중에 다루도록 하겠음.)<br>extend: ‘Ext.app.ViewController’ (Ext.app.ViewController를 상속받는다.)</p>
+<h2 id="3-HomeViewModel-js의-코드"><a href="#3-HomeViewModel-js의-코드" class="headerlink" title="3. HomeViewModel.js의 코드"></a>3. HomeViewModel.js의 코드</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Ext.define(&#39;MyExtGenApp.view.home.HomeViewModel&#39;, &#123;</span><br><span class="line">	extend: &#39;Ext.app.ViewModel&#39;,</span><br><span class="line">	alias: &#39;viewmodel.homeviewmodel&#39;,</span><br><span class="line">	data: &#123;</span><br><span class="line">		name: &#39;homeview&#39;</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.define 명령어를 사용하여 HomeViewModel에 대한 Class를 정의한다. config는 다음과 같다.<br>alias :’controller.homeviewmodel’ (뷰 모델 생성할때 {type: ‘homeviewmodel’}만을 적어서 생성 할 수 있다, xtype과 alias에 대한 부분은 좀 더 조사하여 나중에 다루도록 하겠음.)<br>extend: ‘Ext.app.ViewModel’ (homeviewmodel를 상속받는다.)</p>
+<h2 id="4-HomeView-scss의-코드"><a href="#4-HomeView-scss의-코드" class="headerlink" title="4.HomeView.scss의 코드"></a>4.HomeView.scss의 코드</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.homeview &#123; </span><br><span class="line">  color: <span class="variable">$color</span>;</span><br><span class="line">  font-size: 18px;</span><br><span class="line">  background-color: <span class="variable">$base</span>-foreground-color;</span><br><span class="line">  padding: 15px 0px 0px 15px;</span><br><span class="line">  border: 1px solid lightgray;</span><br><span class="line">  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>사실 scss에 대한것은 잘 모른다. 하지만 알고 있는 부분만 풀어놓고자 한다. (sass에 대한것도 alias 및 xtype과 같이 조사하여 나중에 다루도록 하겠다.)</p>
+<ol>
+<li>HomeView.scss라는 파일의 이름은 home폴더의 하위에 있는 HomeView.js와 같은 이름의 규칙을 지켜서 만들어야 한다. HomeNotView와 같이 다른 이름을 가진 scss파일을 만든 후<br>style을 정의해보았지만 적용되지 않았었다.</li>
+<li>.homeview는 HomeView.js에서 정의한 cls: ‘homeview’ 구성과 같다. 실제 HomeView 컴포넌트를 구성하고 있는 Html 태그를 살펴보면 homeview class선택기가 추가되어 있다.</li>
+<li>color와 background-color는 sass 를 사용하여 미리 정의한 $color와 $base-foreground-color 변수 값을 받아서 사용하고 있다.</li>
+<li>font-size: 18px (homeview 컴포넌트 안에서 글씨들은 18px만큼의 크기를 가진다.)</li>
+<li>padding: 15px 0px 0px 15px (homeview 컴포넌트 안에서 모든 글씨 혹은 그림 등은 위와 오른쪽으로 15px만큼 여백을 가지고 있다.)</li>
+<li>border: 1px solid lightgray (homeview의 바깥에 1px만큼의 굵기를 가진 lightgray색의 실선을 테두리로 만든다.)</li>
+<li>box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4) (homeview의 테두리를 감싼 그림자 효과를 만든다. offset-x | offset-y | blur-radius | spread-radius | color 순서로 정의한다.)</li>
+</ol>
+<p>다음은 포스트는 personnelview를 살펴볼 생각이고 personnelview의 설명할 내용이 적다면 mainview에 대한 것도 추가하여 다뤄봐야겠다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/06/09/eighth/" data-id="ckdk30y7x0000prpveib362ds" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/06/09/eighth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Extjs-Community-Edition-Sample-Application/" rel="tag">Extjs, Community Edition, Sample Application</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-seventh" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/02/seventh/" class="article-date">
+  <time datetime="2019-06-02T08:26:09.000Z" itemprop="datePublished">2019-06-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/02/seventh/">Sample Application- 실행화면</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="오늘은-Application의-화면-구성에-대한것을-살펴볼-것이다"><a href="#오늘은-Application의-화면-구성에-대한것을-살펴볼-것이다" class="headerlink" title="오늘은 Application의 화면 구성에 대한것을 살펴볼 것이다."></a>오늘은 Application의 화면 구성에 대한것을 살펴볼 것이다.</h4><h4 id="상단-중앙-하단-왼쪽-메뉴바-오른쪽의-숨기고-나타낼수-있는-창이-존재한다"><a href="#상단-중앙-하단-왼쪽-메뉴바-오른쪽의-숨기고-나타낼수-있는-창이-존재한다" class="headerlink" title="상단, 중앙, 하단, 왼쪽 메뉴바, 오른쪽의 숨기고 나타낼수 있는 창이 존재한다."></a>상단, 중앙, 하단, 왼쪽 메뉴바, 오른쪽의 숨기고 나타낼수 있는 창이 존재한다.</h4><ol>
+<li>왼쪽에 위치한 접을 수 있는 메뉴바가 위치하고 있다. MyExtGenApp 옆의 =버튼을 누르면 접고 펼 수 있다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/49608580/58758838-85377380-855c-11e9-843f-d914239a4f1c.png" alt="펼처진 상태의 메뉴바"><br><img src="https://user-images.githubusercontent.com/49608580/58758847-a5ffc900-855c-11e9-9933-9ed928466f0a.png" alt="접혀진 상태의 네뉴바"></p>
+<ol start="2">
+<li>메뉴바에 있는 구성들 중 Home 또는 Personel을 누르면 상단의 텍스트와 URL 끝의 #부분 그리고 중앙의 화면이 전환된다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/49608580/58758874-00992500-855d-11e9-8012-5fdf25bdb726.png" alt="Personel로 화면 전환"></p>
+<ol start="3">
+<li>상단에 위치한 &lt;- 버튼을 누르면 오른쪽에 새로운 화면이 튀어나온다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/49608580/58758958-0e02df00-855e-11e9-9b97-49d8b879ed95.png" alt="오른쪽으로 튀어나오는 새로운 창"></p>
+<ol start="4">
+<li>하단의 Extjs의 버전(6.7.0)을 나타나는 화면이 있다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/49608580/58758958-0e02df00-855e-11e9-9b97-49d8b879ed95.png" alt="Extjs 버전을 나타내는 하단 화면"></p>
+<p>다음 포스트는 실제 화면들을 구성하고 있는 코드와 파일 및 폴더의 구조를 살펴볼 예정이다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/06/02/seventh/" data-id="ckdk30y8u000aprpvcy71cey5" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/06/02/seventh/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-sixth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/26/sixth/" class="article-date">
+  <time datetime="2019-05-26T13:04:34.000Z" itemprop="datePublished">2019-05-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/26/sixth/">Extjs-CE Quick Start</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Sencha에서 무료로 사용할 수 있는 CE를 내놓았다. Extjs를 아직 구입하지 않은 사용자에게 좋은 시작이 될 수 있다 느껴졌다.<br>Extjs- CE를 사용하기 위해서는 약간의 요구사항을 만족하는데 그것을 나열해 보겠다.</p>
+<ol>
+<li>Node 10+</li>
+<li>NPM 6+</li>
+<li>JAVA 8 &amp;&amp; 11</li>
+</ol>
+<p>이 요구사항이 만족되면 <a href="https://www.sencha.com/products/extjs/communityedition/" target="_blank" rel="noopener">https://www.sencha.com/products/extjs/communityedition/</a> 페이지로 이동하여 자신의 정보를 입력한다.<br>해당 페이지에 입력한 이메일 주소로 sencha측의 메일이 발송되는데, 이 중 username과 password는 잘 기억해 둔다.</p>
+<p>이제 application project를 만들기 위한 약간의 명령어를 입력한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm login --registry=https://sencha.myget.org/F/community/npm/ --scope=@sencha</span><br></pre></td></tr></table></figure>
+<p>이 명령어를 입력하고 난 후 메일에 포함되어 있던 username과 password를 입력한다. 예를 들면</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">username: asdf..gmail.com</span><br><span class="line">password: A1S2D6F6</span><br><span class="line">e-mail: asdf@gamil.com</span><br></pre></td></tr></table></figure>
+<p>과 같이 입력을 마치고 난 후 Extjs 의 cli를 설치한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @sencha/ext-gen</span><br></pre></td></tr></table></figure>
+<p>Application Project 생성 Quick Start (my-app라는 이름으로 생성된다.)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ext-gen app -a</span><br></pre></td></tr></table></figure>
+<p>Application을 실행시키기 위해서 다음 명령어를 실행한다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> my-app</span><br><span class="line">npm start</span><br><span class="line">또는</span><br><span class="line">npm run desktop</span><br></pre></td></tr></table></figure></p>
+<p>해당 명령어를 입력하면 development build 가 되고 application이 web browser안에서 실행된다.</p>
+<p><img src="https://user-images.githubusercontent.com/49608580/58382969-fe3e4480-800b-11e9-89c3-a8c36bc5caf7.png" alt="Application"></p>
+<p>다음 포스트는 생성된 application을 탐구해 봐야겠다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/05/26/sixth/" data-id="ckdk30y8w000bprpv34xogzmr" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/05/26/sixth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Extjs-Community-Edition-CE-Getting-Start/" rel="tag">Extjs, Community Edition, CE, Getting Start</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fifth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/12/fifth/" class="article-date">
+  <time datetime="2019-05-12T08:00:56.000Z" itemprop="datePublished">2019-05-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/12/fifth/">Extjs- [require]</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>ExtJs Application을 만들 떄 Sencha CMD를 사용하면 &lt;script src= “Ext-all.js” 또는 “Ext-all-debug.js”를 하는 것보다 로드 속도가 빠르게 만들 수 있다.<br>이것 말고도 Sencha CMD를 사용하여 모델, 스토어, 뷰 생성은 물론이고 웹서버를 띄운다거나 개발용코드 테스트용코드 배포용코드 등 여러가지 편리한 기능을 명령어로 실행시킬 수 있다.</p>
+<p>나는 Application을 만들 때 Sencha CMD를 사용하여 만들고, 최근 require떄문에 자주 곤란한 사항에 빠지고는 한다.<br>그래서 이번 포스팅의 주제는 Application 안에 Extjs의 클래스를 사용할 때, requires 안에 해당 클래스를 명시하는것이 중요함을 알리고자 한다.</p>
+<p>예를들어 탭바를 생성하는 클래스를 선언하다고 치자.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> Ext.define(<span class="string">'junho.view.Main'</span>,&#123;</span><br><span class="line">    extend: <span class="string">'Ext.panel.Panel'</span>,</span><br><span class="line">    title: <span class="string">'Hello'</span>,</span><br><span class="line">            </span><br><span class="line">    items: [</span><br><span class="line">        &#123;</span><br><span class="line">            xtype : <span class="string">'tabbar'</span>,</span><br><span class="line">            items: [</span><br><span class="line">                &#123;html: <span class="string">'tab1'</span>&#125;,</span><br><span class="line">                &#123;html: <span class="string">'tab2'</span>&#125;,</span><br><span class="line">                &#123;html: <span class="string">'tab3'</span>&#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Ext.panel.Panel 컴포넌트 안에 tabbar 컴포넌트가 생성되고 tab1, tab2, tab3 탭이 순서대로 생성될 것이다.<br>문제는 여기서 부터 발생하는데, 개발을 할 떄는 화면이 잘 나오고 기능도 예상한대로 실행이 되니까 Sencha app build production 명령어를 실행시켜 배포용 코드를 만들어서 배포를 하고나서 웹 페이지를 접속해보면 나를 맞이하고 있는 빈 화면과 콘솔에 다음과 같은 메시지가 출력이 된다.</p>
+<p><img src="https://user-images.githubusercontent.com/49608580/57580194-83403e80-74e1-11e9-98d7-aec10ffabb95.png" alt="Production 콘솔"></p>
+<p>이러한 메시지가 나타나는 이유는 위에서 언급한 require를 하지 않았기 때문이고, 이렇게 tabbar 클래스를 사용하겠다고 requires안에 ‘Ext.tab.Bar’라고 알려주면, 배포할 경우에 아까 같은 404 에러가 나타나지 않을 것이다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> Ext.define(<span class="string">'junho.view.Main'</span>,&#123;</span><br><span class="line">    extend: <span class="string">'Ext.panel.Panel'</span>,</span><br><span class="line">    title: <span class="string">'Hello'</span>,</span><br><span class="line"></span><br><span class="line">   requires: [</span><br><span class="line">       <span class="string">'Ext.tab.Bar'</span></span><br><span class="line">   ],         </span><br><span class="line">    items: [</span><br><span class="line">        &#123;</span><br><span class="line">            xtype : <span class="string">'tabbar'</span>,</span><br><span class="line">            items: [</span><br><span class="line">                &#123;html: <span class="string">'tab1'</span>&#125;,</span><br><span class="line">                &#123;html: <span class="string">'tab2'</span>&#125;,</span><br><span class="line">                &#123;html: <span class="string">'tab3'</span>&#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>내 경우에는 무슨 404에러? 이러다가 엄청 헤멨었고, 이 글을 보는 분들은 이런 문제를 잘 넘어갔으면 좋겠다.</p>
+<p>그리고 production하기 전에 sencha app build testing 명령어를 실행시켜 테스트용 코드를 생성하여 실행하면 어떤 문제가 있는지 쉽게 알 수 있으므로, sencha app build testing =&gt; sencha app build production 순서로 테스팅 코드를 먼저 확인하고 production을 하여 배포 코드를 확인하기 바란다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/05/12/fifth/" data-id="ckdk30y890001prpv4h6g9g6m" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/05/12/fifth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fourth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/06/fourth/" class="article-date">
+  <time datetime="2019-05-06T06:30:00.000Z" itemprop="datePublished">2019-05-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/06/fourth/">사이드 프로젝트</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>회사 사람들끼리 쓸 정도의 간단한 메신저 프로그램을 만들어 보려고 한다.</p>
+<ol>
+<li><p>메신저 프로그램을 만드는 이유는 평소 업무상 의사소통을 카카오톡을 이용하는데, 내PC는 리눅스 운영체제를 사용중이다.<br> 카카오톡은 현재 리눅스 운영체제 버전의 응용프로그램이 서비스 중이지 않고, 난 그것이 많이 불편하다.</p>
+</li>
+<li><p>현재의 목표는 웹 페이지에서 동작하는 채팅 프로그램을 만드는 것. 그 이후에 데스크탑에서 동작하는 응용프로그램, 스마트폰에서 동작하는 앱을 만들어 사용하는 것이다.</p>
+<ul>
+<li>메신저 웹 페이지</li>
+<li>데스크탑 응용프로그램</li>
+<li>스마트폰 응용프로그램</li>
+</ul>
+</li>
+<li><p>메신저 프로그램을 만드는 것에 대해서 무엇을 사용하여, 어떻게 만들지를 이렇게 생각했다.</p>
+<ul>
+<li><p>메신저 웹 페이지: Front-End는 React를, Back-End 생각해두지 않았다.(아마 Spring Boot나 Node JS를 사용하지 않을까?)<br>  React는 페이스북, 네이버, 인스타그램 등 유명한 회사에서도 사용 중인 라이브러리이다.<br>  커뮤니티의 규모가 크고 넓으며, 다양한 자료도 얻을 수 있다고 한다.</p>
+</li>
+<li><p>데스크탑 응용프로그램: Electron에 React 프레임워크로 작성한 페이지를 올려 사용할 생각이다.<br>  Electron은 Visual Studio Code, Atom, Discord와 같은 프로그램이 Electron을 사용하여 만들어졌다고 한다.<br>  실제로 이 깃헙 페이지도 VS Code를 사용하여 작성 중이며, 웹으로 만들어졌다고 생각되지 않을정도로 빠르고 매우 편리하다.</p>
+</li>
+<li><p>스마트폰 응용프로그램: React-Native로 만들 생각이다. 전에 안드로이드 어플을 만들 떄 웹 뷰 컴포넌트를 통해서 화면을 띄울떄는 성능의 저하가 매우           심하게 일어났었다.<br>  React-Native로 만들어진 상용 프로그램 중에는 에어 비앤비, 인스타그램 등이 있다고 한다.<br>  에어 비앤비와 인스타그램이 사용해 봤을 때 속도가 느리지 않다고 느껴지기 때문에 React-Native를 사용하여 만들어볼 생각이다.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>마무리 - 사이드 프로젝트는 여기까지만 생각을 했고, React를 시작하는것은 생활코딩의 강좌를 보고 시작하려 한다.<br>        기초 적인 것을 보고 따라하면서 웹 프로그램을 띄우는 것이 현재의 단기적인 목표이다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/05/06/fourth/" data-id="ckdk30y8k0004prpv1r4ken7b" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/05/06/fourth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-third" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/30/third/" class="article-date">
+  <time datetime="2019-04-29T15:19:39.000Z" itemprop="datePublished">2019-04-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/30/third/">ExtJs 반복하여 store load하기 - (2)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>저번은 Extjs의 스토어 load를 반복분을 통해서 순차적으로 되는지 시도해 보았다.<br>결과적으로 반복문의 맨 마지막 루프의 결과 값인 3만이 콘솔에 입력되었다.</p>
+<p>재귀를 통해서 스토어가 load될 때마다 현재 넘겨진 인자의 값이 제일 첫 번째의 것인지 비교하도록 하였다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">const promise = (store, url) =&gt; &#123;</span><br><span class="line">        <span class="built_in">return</span> new Ext.Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">            store.proxy.setUrl(url);</span><br><span class="line">            store.load(&#123;</span><br><span class="line">                callback: (record, operation, success) =&gt; &#123;</span><br><span class="line">                    <span class="keyword">if</span> (success) &#123;</span><br><span class="line">                        resolve(record[0].get(<span class="string">'no'</span>));</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        reject(operation)</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">const callPromise = (store, url) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (url.length === 0) &#123;</span><br><span class="line">        <span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        promise(store, url[url.length - 1]).<span class="keyword">then</span>(</span><br><span class="line">            (value) =&gt; &#123;</span><br><span class="line">                <span class="keyword">if</span> (url.length == 0) &#123;</span><br><span class="line">                    <span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    console.log(value);</span><br><span class="line">                    url.pop(value);</span><br><span class="line">                    callPromise(store, url);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"> &#125;;</span><br><span class="line"> </span><br><span class="line">const url = new Array();</span><br><span class="line">url.push(<span class="string">'data.json'</span>, <span class="string">'data1.json'</span>, <span class="string">'data2.json'</span>);</span><br><span class="line"></span><br><span class="line">callPromise(store, url);</span><br></pre></td></tr></table></figure></p>
+<p>재귀를 3에서 부터 1까지 감소하도록 실행시켰기 떄문에 결과값은 3 2 1 이 출력 된다.</p>
+<p>ExtJS의 스토어는 반복문 안에서 맨 마지막 루프만 실행시킨다는 것을 알았다.</p>
+<p>다음은 ExtJs의 Ajax Request도 반복문에서 맨 마지막 루프의 결과만 나타내는지 알아 보고자 한다.</p>
+<p>포스트 (1)과 (2)를 실습한 sencha fiddle 주소는 <a href="https://fiddle.sencha.com/#view/editor&amp;fiddle/2rmb" target="_blank" rel="noopener">https://fiddle.sencha.com/#view/editor&amp;fiddle/2rmb</a> 입니다.<br>참고를 위해 적어 놓았습니다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/04/30/third/" data-id="ckdk30y8z000dprpv2m193dub" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/04/30/third/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-second" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/21/second/" class="article-date">
+  <time datetime="2019-04-21T05:00:00.000Z" itemprop="datePublished">2019-04-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/21/second/">ExtJs 반복하여 store load하기 - (1)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Extjs의 store를 for 반복문마다 값을 설정하여, load하였는데 맨 마지막 루프의 값만이 결과로 나타났다.<br>그래서, 어떻게 하면 store를 전부 load 할지 실습해보는 글을 포스팅 해보고자 한다.</p>
+<p>Ajax호출을 통해 데이터를 받아오는 스토어를 생성<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Ext.create(<span class="string">'Ext.data.Store'</span>,&#123;</span><br><span class="line">    autoLoad: <span class="literal">true</span>,</span><br><span class="line">    proxy: &#123;</span><br><span class="line">        <span class="built_in">type</span>: <span class="string">'ajax'</span>,</span><br><span class="line">        url: <span class="string">'data.json'</span>,</span><br><span class="line">        reader: &#123;</span><br><span class="line">            <span class="built_in">type</span>: <span class="string">'json'</span>,</span><br><span class="line">            rootProperty: <span class="string">'data'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>for loop 안에서 스토어를 로드<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">const load = (store,url) =&gt; &#123;</span><br><span class="line">    store.proxy.setUrl(url);</span><br><span class="line">    store.load(&#123;</span><br><span class="line">        callback: (record)=&gt;&#123;</span><br><span class="line">            console.log(record[0].get(<span class="string">'no'</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Ext.application(&#123;</span><br><span class="line">    name : <span class="string">'Fiddle'</span>,</span><br><span class="line"></span><br><span class="line">    launch : <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        const store= Ext.create(<span class="string">'Ext.data.Store'</span>,&#123;</span><br><span class="line">            autoLoad: <span class="literal">false</span>,</span><br><span class="line">            proxy: &#123;</span><br><span class="line">                <span class="built_in">type</span>: <span class="string">'ajax'</span>,</span><br><span class="line">                reader: &#123;</span><br><span class="line">                    <span class="built_in">type</span>: <span class="string">'json'</span>,</span><br><span class="line">                    rootProperty: <span class="string">'data'</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;),</span><br><span class="line">        url = new Array();</span><br><span class="line">        url.push(<span class="string">'data.json'</span>,<span class="string">'data1.json'</span>,<span class="string">'data2.json'</span>);</span><br><span class="line">        <span class="keyword">for</span>(var count=0; count&lt; url.length; count++)&#123;</span><br><span class="line">            load(store, url[count]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>array.length= 3이고, 총 3번의 반복하면서 load함수가 호출</p>
+<p><span style="color:red">예상 결과</span> : 1 2 3 | <span style="color:red">실제 결과</span> : 3<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 3</span><br></pre></td></tr></table></figure></p>
+<p>promise를 사용하여 load를 해보도록 하자.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">const promise= (store,url, current, finish) =&gt;&#123;</span><br><span class="line">        <span class="built_in">return</span> new Ext.Promise((resolve, reject)=&gt;&#123;</span><br><span class="line">            store.proxy.setUrl(url);</span><br><span class="line">            store.load(&#123;</span><br><span class="line">                callback: (record, operation, success)=&gt;&#123;</span><br><span class="line">                    <span class="keyword">if</span>(success)&#123;</span><br><span class="line">                        resolve(record[0].get(<span class="string">'no'</span>));</span><br><span class="line">                    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                        reject(operation)</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Ext.application(&#123;</span><br><span class="line">    name : <span class="string">'Fiddle'</span>,</span><br><span class="line"></span><br><span class="line">    launch : <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        const store= Ext.create(<span class="string">'Ext.data.Store'</span>,&#123;</span><br><span class="line">            autoLoad: <span class="literal">false</span>,</span><br><span class="line">            proxy: &#123;</span><br><span class="line">                <span class="built_in">type</span>: <span class="string">'ajax'</span>,</span><br><span class="line">                reader: &#123;</span><br><span class="line">                    <span class="built_in">type</span>: <span class="string">'json'</span>,</span><br><span class="line">                    rootProperty: <span class="string">'data'</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;),</span><br><span class="line">        url = new Array();</span><br><span class="line">        url.push(<span class="string">'data.json'</span>,<span class="string">'data1.json'</span>,<span class="string">'data2.json'</span>);</span><br><span class="line">        <span class="keyword">for</span>(var count=0; count&lt; url.length; count++)&#123;</span><br><span class="line">            promise(store, url[count]).<span class="keyword">then</span>(</span><br><span class="line">                (value)=&gt;&#123;</span><br><span class="line">                    console.log(value);</span><br><span class="line">                &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><br>Promise를 사용해도 콘솔의 결과는 3만이 나타났다.<br>Extjs의 store는 맨 마지막의 load만을 사용하는 것 같다.</p>
+<h1 id="어떻게-해야-반복하여-extjs의-스토어를-로드할-수-있을까"><a href="#어떻게-해야-반복하여-extjs의-스토어를-로드할-수-있을까" class="headerlink" title="어떻게 해야 반복하여 extjs의 스토어를 로드할 수 있을까.."></a><div style="color:red;">어떻게 해야 반복하여 extjs의 스토어를 로드할 수 있을까..</div></h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/04/21/second/" data-id="ckdk30y8s0009prpvenkf2azg" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/04/21/second/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/14/first/" class="article-date">
+  <time datetime="2019-04-14T08:41:45.000Z" itemprop="datePublished">2019-04-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/14/first/">hexo Quick Start</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://junhojava.github.io/2019/04/14/first/" data-id="ckdk30y8g0003prpv2tdx53nb" class="article-share-link">Share</a>
+      
+        <a href="https://junhojava.github.io/2019/04/14/first/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-CE-Getting-Start/" rel="tag">Extjs, Community Edition, CE, Getting Start</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-CE-Sample-Application-PersonnelView/" rel="tag">Extjs, Community Edition, CE, Sample Application, PersonnelView</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extjs-Community-Edition-Sample-Application/" rel="tag">Extjs, Community Edition, Sample Application</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Extjs-Community-Edition-CE-Getting-Start/" style="font-size: 10px;">Extjs, Community Edition, CE, Getting Start</a> <a href="/tags/Extjs-Community-Edition-CE-Sample-Application-PersonnelView/" style="font-size: 10px;">Extjs, Community Edition, CE, Sample Application, PersonnelView</a> <a href="/tags/Extjs-Community-Edition-Sample-Application/" style="font-size: 10px;">Extjs, Community Edition, Sample Application</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/24/post_20200807/">post_20200807</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/16/ninth/">Sample Application- PersonnelView</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/09/eighth/">Sample Application- HomeView</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/02/seventh/">Sample Application- 실행화면</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/26/sixth/">Extjs-CE Quick Start</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Junho<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'https-junhojava-github-io';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
